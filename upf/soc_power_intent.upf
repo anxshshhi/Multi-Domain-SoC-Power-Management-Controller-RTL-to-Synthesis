@@ -1,0 +1,97 @@
+# ============================================================================
+# File: soc_power_intent.upf
+# Standard: IEEE 1801 UPF 2.1
+# Description: Power Intent Specification for Multi-Domain SoC PMC
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# 1. Create Power Domains
+# ----------------------------------------------------------------------------
+create_power_domain PD_AON -include_scope
+create_power_domain PD_CPU -elements {u_cpu_subsys}
+
+# ----------------------------------------------------------------------------
+# 2. Create Power Supply Ports and Nets
+# ----------------------------------------------------------------------------
+# Ports (External Supply Connections)
+create_supply_port VDD_AO
+create_supply_port VDD_CPU_IN
+create_supply_port VSS
+
+# Nets (Internal Power Distribution)
+create_supply_net  VDD_AO      -domain PD_AON
+create_supply_net  VDD_CPU     -domain PD_CPU
+create_supply_net  VDD_CPU_SW  -domain PD_CPU
+create_supply_net  VSS         -domain PD_AON -reuse
+
+# ----------------------------------------------------------------------------
+# 3. Connect Power Nets to Domains
+# ----------------------------------------------------------------------------
+set_domain_supply_net PD_AON -primary_power_net VDD_AO     -primary_ground_net VSS
+set_domain_supply_net PD_CPU -primary_power_net VDD_CPU_SW  -primary_ground_net VSS
+
+# ----------------------------------------------------------------------------
+# 4. Define Power Switch (Header Switch for PD_CPU Domain)
+# ----------------------------------------------------------------------------
+create_power_switch PSW_CPU \
+    -domain PD_CPU \
+    -output_supply_port {vout VDD_CPU_SW} \
+    -input_supply_port  {vin  VDD_CPU_IN} \
+    -control_port       {sw_ctrl u_pmc_core/cpu_pwr_sw_en} \
+    -on_state           {on_state vin {sw_ctrl}}
+
+# ----------------------------------------------------------------------------
+# 5. Define Isolation Strategy
+# Clamps all outputs leaving PD_CPU to logic 0 when powered down
+# ----------------------------------------------------------------------------
+set_isolation iso_cpu_out \
+    -domain PD_CPU \
+    -isolation_power_net VDD_AO \
+    -isolation_ground_net VSS \
+    -clamp_value 0 \
+    -applies_to outputs
+
+set_isolation_control iso_cpu_out \
+    -domain PD_CPU \
+    -isolation_signal u_pmc_core/cpu_iso_en \
+    -isolation_signal_sets_default_clamp \
+    -location parent
+
+# ----------------------------------------------------------------------------
+# 6. Define Retention Strategy
+# Preserves register context during power down using VDD_AO power rail
+# ----------------------------------------------------------------------------
+set_retention ret_cpu_regs \
+    -domain PD_CPU \
+    -retention_power_net VDD_AO \
+    -retention_ground_net VSS
+
+set_retention_control ret_cpu_regs \
+    -domain PD_CPU \
+    -save_signal    {u_pmc_core/cpu_ret_save high} \
+    -restore_signal {u_pmc_core/cpu_ret_restore high}
+
+# ----------------------------------------------------------------------------
+# Add to upf/soc_power_intent.upf for Phase 4 Dynamic Voltage Scaling (DVFS)
+# ----------------------------------------------------------------------------
+
+# 1. Define Level Shifter Strategy for Signals Leaving PD_CPU
+set_level_shifter LS_CPU_TO_AON \
+    -domain PD_CPU \
+    -applies_to outputs \
+    -rule both \
+    -location self
+
+# ----------------------------------------------------------------------------
+# 7. Power State Table (PST) Definition
+# ----------------------------------------------------------------------------
+add_port_state VDD_AO     -state {ALWAYS_ON 1.08}
+add_port_state VDD_CPU_IN -state {ON 1.08} -state {OFF off}
+add_port_state PSW_CPU/vout -state {ON 1.08} -state {OFF off}
+
+create_pst SoC_PST -supplies {VDD_AO VDD_CPU_IN PSW_CPU/vout}
+
+add_pst_state FULL_ON -pst SoC_PST -state {ALWAYS_ON ON ON}
+add_pst_state CPU_OFF -pst SoC_PST -state {ALWAYS_ON ON OFF}
+add_pst_state LOW_V_ON -pst soc_pst -state_values {ON LOW_V ON}
+

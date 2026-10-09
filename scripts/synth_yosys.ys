@@ -1,0 +1,11 @@
+read_verilog -sv rtl/pmc_core.v
+read_verilog -sv rtl/pmc_apb_slave.v
+read_verilog -sv rtl/isolation_wrapper.v
+read_verilog -sv rtl/retention_reg.v
+hierarchy -top pmc_apb_slave
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+abc -g AND,OR,XOR,NAND,NOR,MUX
+clean
+check
+write_verilog -noattr -noexpr netlist/pmc_apb_slave_gate.v

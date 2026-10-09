@@ -1,0 +1,1329 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+190 (git sha1 0e8336b4e, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `scripts/sta_timing.tcl' --
+
+1. Executing Verilog-2005 frontend: netlist/pmc_mapped.v
+Parsing Verilog input from `netlist/pmc_mapped.v' to AST representation.
+Generating RTLIL representation for module `\pmc_apb_slave'.
+Generating RTLIL representation for module `\pmc_core'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmc_apb_slave
+Used module:     \pmc_core
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmc_apb_slave
+Used module:     \pmc_core
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:866$351 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:862$349 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:858$347 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:854$345 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:850$343 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:846$341 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:842$339 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:838$337 in module pmc_core.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:444$127 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:440$125 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:436$123 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:432$121 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:428$119 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:424$117 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:420$115 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:416$113 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:412$111 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:408$109 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:404$107 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:400$105 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:396$103 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:392$101 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:388$99 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:384$97 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:380$95 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:376$93 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:372$91 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:368$89 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:364$87 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:360$85 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:356$83 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:352$81 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:348$79 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:344$77 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:340$75 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:336$73 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:332$71 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:328$69 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:324$67 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:320$65 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:316$63 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:312$61 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:308$59 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:304$57 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:300$55 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:296$53 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:292$51 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:288$49 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:284$47 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:280$45 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:276$43 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:272$41 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:268$39 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:264$37 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:260$35 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:256$33 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:252$31 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:248$29 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:244$27 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:240$25 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:236$23 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:232$21 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:228$19 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:224$17 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:220$15 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:216$13 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:212$11 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:208$9 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:204$7 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:200$5 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:196$3 in module pmc_apb_slave.
+Marked 1 switch rules as full_case in process $proc$netlist/pmc_mapped.v:192$1 in module pmc_apb_slave.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 16 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:866$351'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:862$349'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:858$347'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:854$345'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:850$343'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:846$341'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:842$339'.
+Found async reset \rst_n_aon in `\pmc_core.$proc$netlist/pmc_mapped.v:838$337'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:444$127'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:440$125'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:436$123'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:432$121'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:428$119'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:424$117'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:420$115'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:416$113'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:412$111'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:408$109'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:404$107'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:400$105'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:396$103'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:392$101'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:388$99'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:384$97'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:380$95'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:376$93'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:372$91'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:368$89'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:364$87'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:360$85'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:356$83'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:352$81'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:348$79'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:344$77'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:340$75'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:336$73'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:332$71'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:328$69'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:324$67'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:320$65'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:316$63'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:312$61'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:308$59'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:304$57'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:300$55'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:296$53'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:292$51'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:288$49'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:284$47'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:280$45'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:276$43'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:272$41'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:268$39'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:264$37'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:260$35'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:256$33'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:252$31'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:248$29'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:244$27'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:240$25'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:236$23'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:232$21'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:228$19'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:224$17'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:220$15'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:216$13'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:212$11'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:208$9'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:204$7'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:200$5'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:196$3'.
+Found async reset \PRESETn in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:192$1'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~68 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:866$351'.
+     1/1: $0\timer[3:3]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:862$349'.
+     1/1: $0\timer[2:2]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:858$347'.
+     1/1: $0\timer[1:1]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:854$345'.
+     1/1: $0\timer[0:0]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:850$343'.
+     1/1: $0\current_state[3:3]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:846$341'.
+     1/1: $0\current_state[2:2]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:842$339'.
+     1/1: $0\current_state[1:1]
+Creating decoders for process `\pmc_core.$proc$netlist/pmc_mapped.v:838$337'.
+     1/1: $0\current_state[0:0]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:444$127'.
+     1/1: $0\reg_pmc_timing[19:19]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:440$125'.
+     1/1: $0\reg_pmc_timing[18:18]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:436$123'.
+     1/1: $0\reg_pmc_timing[17:17]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:432$121'.
+     1/1: $0\reg_pmc_timing[16:16]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:428$119'.
+     1/1: $0\reg_pmc_timing[15:15]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:424$117'.
+     1/1: $0\reg_pmc_timing[14:14]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:420$115'.
+     1/1: $0\reg_pmc_timing[13:13]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:416$113'.
+     1/1: $0\reg_pmc_timing[12:12]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:412$111'.
+     1/1: $0\reg_pmc_timing[11:11]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:408$109'.
+     1/1: $0\reg_pmc_timing[10:10]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:404$107'.
+     1/1: $0\reg_pmc_timing[9:9]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:400$105'.
+     1/1: $0\reg_pmc_timing[8:8]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:396$103'.
+     1/1: $0\reg_pmc_timing[7:7]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:392$101'.
+     1/1: $0\reg_pmc_timing[6:6]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:388$99'.
+     1/1: $0\reg_pmc_timing[5:5]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:384$97'.
+     1/1: $0\reg_pmc_timing[4:4]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:380$95'.
+     1/1: $0\reg_pmc_timing[3:3]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:376$93'.
+     1/1: $0\reg_pmc_timing[2:2]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:372$91'.
+     1/1: $0\reg_pmc_timing[1:1]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:368$89'.
+     1/1: $0\reg_pmc_timing[0:0]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:364$87'.
+     1/1: $0\reg_pmc_ctrl[31:31]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:360$85'.
+     1/1: $0\reg_pmc_ctrl[30:30]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:356$83'.
+     1/1: $0\reg_pmc_ctrl[29:29]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:352$81'.
+     1/1: $0\reg_pmc_ctrl[28:28]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:348$79'.
+     1/1: $0\reg_pmc_ctrl[27:27]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:344$77'.
+     1/1: $0\reg_pmc_ctrl[26:26]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:340$75'.
+     1/1: $0\reg_pmc_ctrl[25:25]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:336$73'.
+     1/1: $0\reg_pmc_ctrl[24:24]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:332$71'.
+     1/1: $0\reg_pmc_ctrl[23:23]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:328$69'.
+     1/1: $0\reg_pmc_ctrl[22:22]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:324$67'.
+     1/1: $0\reg_pmc_ctrl[21:21]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:320$65'.
+     1/1: $0\reg_pmc_ctrl[20:20]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:316$63'.
+     1/1: $0\reg_pmc_ctrl[19:19]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:312$61'.
+     1/1: $0\reg_pmc_ctrl[18:18]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:308$59'.
+     1/1: $0\reg_pmc_ctrl[17:17]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:304$57'.
+     1/1: $0\reg_pmc_ctrl[16:16]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:300$55'.
+     1/1: $0\reg_pmc_ctrl[15:15]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:296$53'.
+     1/1: $0\reg_pmc_ctrl[14:14]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:292$51'.
+     1/1: $0\reg_pmc_ctrl[13:13]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:288$49'.
+     1/1: $0\reg_pmc_ctrl[12:12]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:284$47'.
+     1/1: $0\reg_pmc_ctrl[11:11]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:280$45'.
+     1/1: $0\reg_pmc_ctrl[10:10]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:276$43'.
+     1/1: $0\reg_pmc_ctrl[9:9]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:272$41'.
+     1/1: $0\reg_pmc_ctrl[8:8]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:268$39'.
+     1/1: $0\reg_pmc_ctrl[7:7]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:264$37'.
+     1/1: $0\reg_pmc_ctrl[6:6]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:260$35'.
+     1/1: $0\reg_pmc_ctrl[5:5]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:256$33'.
+     1/1: $0\reg_pmc_ctrl[4:4]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:252$31'.
+     1/1: $0\reg_pmc_ctrl[3:3]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:248$29'.
+     1/1: $0\reg_pmc_ctrl[2:2]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:244$27'.
+     1/1: $0\reg_pmc_ctrl[1:1]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:240$25'.
+     1/1: $0\reg_pmc_ctrl[0:0]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:236$23'.
+     1/1: $0\reg_pmc_timing[31:31]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:232$21'.
+     1/1: $0\reg_pmc_timing[30:30]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:228$19'.
+     1/1: $0\reg_pmc_timing[29:29]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:224$17'.
+     1/1: $0\reg_pmc_timing[28:28]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:220$15'.
+     1/1: $0\reg_pmc_timing[27:27]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:216$13'.
+     1/1: $0\reg_pmc_timing[26:26]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:212$11'.
+     1/1: $0\reg_pmc_timing[25:25]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:208$9'.
+     1/1: $0\reg_pmc_timing[24:24]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:204$7'.
+     1/1: $0\reg_pmc_timing[23:23]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:200$5'.
+     1/1: $0\reg_pmc_timing[22:22]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:196$3'.
+     1/1: $0\reg_pmc_timing[21:21]
+Creating decoders for process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:192$1'.
+     1/1: $0\reg_pmc_timing[20:20]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:819$320_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:820$321_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:821$322_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:822$323_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:823$324_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:824$325_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:825$326_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:826$327_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:827$328_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:828$329_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:829$330_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:830$331_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:831$332_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:832$333_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:833$334_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+No latch inferred for signal `\pmc_core.$memwr$\$auto$proc_rom.cc:155:do_switch$23$netlist/pmc_mapped.v:834$335_EN' from process `\pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmc_core.\timer [3]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:866$351'.
+  created $adff cell `$procdff$673' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\timer [2]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:862$349'.
+  created $adff cell `$procdff$678' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\timer [1]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:858$347'.
+  created $adff cell `$procdff$683' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\timer [0]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:854$345'.
+  created $adff cell `$procdff$688' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\current_state [3]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:850$343'.
+  created $adff cell `$procdff$693' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\current_state [2]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:846$341'.
+  created $adff cell `$procdff$698' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\current_state [1]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:842$339'.
+  created $adff cell `$procdff$703' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_core.\current_state [0]' using process `\pmc_core.$proc$netlist/pmc_mapped.v:838$337'.
+  created $adff cell `$procdff$708' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [19]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:444$127'.
+  created $adff cell `$procdff$713' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [18]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:440$125'.
+  created $adff cell `$procdff$718' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [17]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:436$123'.
+  created $adff cell `$procdff$723' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [16]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:432$121'.
+  created $adff cell `$procdff$728' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [15]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:428$119'.
+  created $adff cell `$procdff$733' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [14]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:424$117'.
+  created $adff cell `$procdff$738' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [13]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:420$115'.
+  created $adff cell `$procdff$743' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [12]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:416$113'.
+  created $adff cell `$procdff$748' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [11]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:412$111'.
+  created $adff cell `$procdff$753' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [10]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:408$109'.
+  created $adff cell `$procdff$758' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [9]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:404$107'.
+  created $adff cell `$procdff$763' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [8]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:400$105'.
+  created $adff cell `$procdff$768' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [7]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:396$103'.
+  created $adff cell `$procdff$773' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [6]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:392$101'.
+  created $adff cell `$procdff$778' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [5]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:388$99'.
+  created $adff cell `$procdff$783' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [4]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:384$97'.
+  created $adff cell `$procdff$788' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [3]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:380$95'.
+  created $adff cell `$procdff$793' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [2]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:376$93'.
+  created $adff cell `$procdff$798' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [1]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:372$91'.
+  created $adff cell `$procdff$803' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [0]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:368$89'.
+  created $adff cell `$procdff$808' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [31]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:364$87'.
+  created $adff cell `$procdff$813' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [30]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:360$85'.
+  created $adff cell `$procdff$818' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [29]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:356$83'.
+  created $adff cell `$procdff$823' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [28]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:352$81'.
+  created $adff cell `$procdff$828' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [27]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:348$79'.
+  created $adff cell `$procdff$833' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [26]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:344$77'.
+  created $adff cell `$procdff$838' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [25]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:340$75'.
+  created $adff cell `$procdff$843' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [24]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:336$73'.
+  created $adff cell `$procdff$848' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [23]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:332$71'.
+  created $adff cell `$procdff$853' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [22]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:328$69'.
+  created $adff cell `$procdff$858' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [21]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:324$67'.
+  created $adff cell `$procdff$863' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [20]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:320$65'.
+  created $adff cell `$procdff$868' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [19]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:316$63'.
+  created $adff cell `$procdff$873' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [18]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:312$61'.
+  created $adff cell `$procdff$878' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [17]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:308$59'.
+  created $adff cell `$procdff$883' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [16]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:304$57'.
+  created $adff cell `$procdff$888' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [15]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:300$55'.
+  created $adff cell `$procdff$893' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [14]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:296$53'.
+  created $adff cell `$procdff$898' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [13]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:292$51'.
+  created $adff cell `$procdff$903' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [12]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:288$49'.
+  created $adff cell `$procdff$908' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [11]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:284$47'.
+  created $adff cell `$procdff$913' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [10]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:280$45'.
+  created $adff cell `$procdff$918' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [9]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:276$43'.
+  created $adff cell `$procdff$923' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [8]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:272$41'.
+  created $adff cell `$procdff$928' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [7]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:268$39'.
+  created $adff cell `$procdff$933' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [6]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:264$37'.
+  created $adff cell `$procdff$938' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [5]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:260$35'.
+  created $adff cell `$procdff$943' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [4]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:256$33'.
+  created $adff cell `$procdff$948' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [3]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:252$31'.
+  created $adff cell `$procdff$953' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [2]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:248$29'.
+  created $adff cell `$procdff$958' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [1]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:244$27'.
+  created $adff cell `$procdff$963' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_ctrl [0]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:240$25'.
+  created $adff cell `$procdff$968' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [31]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:236$23'.
+  created $adff cell `$procdff$973' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [30]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:232$21'.
+  created $adff cell `$procdff$978' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [29]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:228$19'.
+  created $adff cell `$procdff$983' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [28]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:224$17'.
+  created $adff cell `$procdff$988' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [27]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:220$15'.
+  created $adff cell `$procdff$993' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [26]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:216$13'.
+  created $adff cell `$procdff$998' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [25]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:212$11'.
+  created $adff cell `$procdff$1003' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [24]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:208$9'.
+  created $adff cell `$procdff$1008' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [23]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:204$7'.
+  created $adff cell `$procdff$1013' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [22]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:200$5'.
+  created $adff cell `$procdff$1018' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [21]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:196$3'.
+  created $adff cell `$procdff$1023' with positive edge clock and positive level reset.
+Creating register for signal `\pmc_apb_slave.\reg_pmc_timing [20]' using process `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:192$1'.
+  created $adff cell `$procdff$1028' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:818$516'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:866$351'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:862$349'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:858$347'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:854$345'.
+Found and cleaned up 1 empty switch in `\pmc_core.$proc$netlist/pmc_mapped.v:850$343'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:850$343'.
+Found and cleaned up 1 empty switch in `\pmc_core.$proc$netlist/pmc_mapped.v:846$341'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:846$341'.
+Found and cleaned up 1 empty switch in `\pmc_core.$proc$netlist/pmc_mapped.v:842$339'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:842$339'.
+Found and cleaned up 1 empty switch in `\pmc_core.$proc$netlist/pmc_mapped.v:838$337'.
+Removing empty process `pmc_core.$proc$netlist/pmc_mapped.v:838$337'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:444$127'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:444$127'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:440$125'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:440$125'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:436$123'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:436$123'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:432$121'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:432$121'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:428$119'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:428$119'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:424$117'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:424$117'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:420$115'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:420$115'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:416$113'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:416$113'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:412$111'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:412$111'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:408$109'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:408$109'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:404$107'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:404$107'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:400$105'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:400$105'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:396$103'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:396$103'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:392$101'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:392$101'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:388$99'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:388$99'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:384$97'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:384$97'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:380$95'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:380$95'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:376$93'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:376$93'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:372$91'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:372$91'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:368$89'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:368$89'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:364$87'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:364$87'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:360$85'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:360$85'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:356$83'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:356$83'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:352$81'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:352$81'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:348$79'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:348$79'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:344$77'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:344$77'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:340$75'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:340$75'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:336$73'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:336$73'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:332$71'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:332$71'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:328$69'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:328$69'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:324$67'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:324$67'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:320$65'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:320$65'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:316$63'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:316$63'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:312$61'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:312$61'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:308$59'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:308$59'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:304$57'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:304$57'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:300$55'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:300$55'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:296$53'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:296$53'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:292$51'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:292$51'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:288$49'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:288$49'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:284$47'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:284$47'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:280$45'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:280$45'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:276$43'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:276$43'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:272$41'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:272$41'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:268$39'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:268$39'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:264$37'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:264$37'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:260$35'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:260$35'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:256$33'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:256$33'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:252$31'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:252$31'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:248$29'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:248$29'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:244$27'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:244$27'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:240$25'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:240$25'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:236$23'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:236$23'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:232$21'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:232$21'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:228$19'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:228$19'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:224$17'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:224$17'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:220$15'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:220$15'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:216$13'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:216$13'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:212$11'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:212$11'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:208$9'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:208$9'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:204$7'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:204$7'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:200$5'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:200$5'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:196$3'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:196$3'.
+Found and cleaned up 1 empty switch in `\pmc_apb_slave.$proc$netlist/pmc_mapped.v:192$1'.
+Removing empty process `pmc_apb_slave.$proc$netlist/pmc_mapped.v:192$1'.
+Cleaned up 68 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmc_core.
+<suppressed ~16 debug messages>
+Optimizing module pmc_apb_slave.
+<suppressed ~128 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmc_core.
+Optimizing module pmc_apb_slave.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmc_core'.
+Computing hashes of 192 cells of `\pmc_core'.
+Finding duplicate cells in `\pmc_core'.
+Computing hashes of 178 cells of `\pmc_core'.
+Finding duplicate cells in `\pmc_core'.
+<suppressed ~42 debug messages>
+Finding identical cells in module `\pmc_apb_slave'.
+Computing hashes of 448 cells of `\pmc_apb_slave'.
+Finding duplicate cells in `\pmc_apb_slave'.
+Computing hashes of 322 cells of `\pmc_apb_slave'.
+Finding duplicate cells in `\pmc_apb_slave'.
+<suppressed ~378 debug messages>
+Removed a total of 140 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmc_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pmc_apb_slave..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~258 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmc_core.
+  Optimizing cells in module \pmc_apb_slave.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmc_core'.
+Computing hashes of 178 cells of `\pmc_core'.
+Finding duplicate cells in `\pmc_core'.
+Finding identical cells in module `\pmc_apb_slave'.
+Computing hashes of 322 cells of `\pmc_apb_slave'.
+Finding duplicate cells in `\pmc_apb_slave'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$698 ($adff) from module pmc_core (D = $ternary$netlist/pmc_mapped.v:1014$498_Y, Q = \current_state [2]).
+Adding EN signal on $procdff$703 ($adff) from module pmc_core (D = $ternary$netlist/pmc_mapped.v:1013$497_Y, Q = \current_state [1]).
+Adding EN signal on $procdff$693 ($adff) from module pmc_core (D = $ternary$netlist/pmc_mapped.v:1015$499_Y, Q = \current_state [3]).
+Adding EN signal on $procdff$708 ($adff) from module pmc_core (D = $ternary$netlist/pmc_mapped.v:1012$496_Y, Q = \current_state [0]).
+Adding EN signal on $procdff$713 ($adff) from module pmc_apb_slave (D = \PWDATA [19], Q = \reg_pmc_timing [19]).
+Adding EN signal on $procdff$873 ($adff) from module pmc_apb_slave (D = \PWDATA [19], Q = \reg_pmc_ctrl [19]).
+Adding EN signal on $procdff$918 ($adff) from module pmc_apb_slave (D = \PWDATA [10], Q = \reg_pmc_ctrl [10]).
+Adding EN signal on $procdff$718 ($adff) from module pmc_apb_slave (D = \PWDATA [18], Q = \reg_pmc_timing [18]).
+Adding EN signal on $procdff$823 ($adff) from module pmc_apb_slave (D = \PWDATA [29], Q = \reg_pmc_ctrl [29]).
+Adding EN signal on $procdff$978 ($adff) from module pmc_apb_slave (D = \PWDATA [30], Q = \reg_pmc_timing [30]).
+Adding EN signal on $procdff$723 ($adff) from module pmc_apb_slave (D = \PWDATA [17], Q = \reg_pmc_timing [17]).
+Adding EN signal on $procdff$1028 ($adff) from module pmc_apb_slave (D = \PWDATA [20], Q = \reg_pmc_timing [20]).
+Adding EN signal on $procdff$928 ($adff) from module pmc_apb_slave (D = \PWDATA [8], Q = \reg_pmc_ctrl [8]).
+Adding EN signal on $procdff$728 ($adff) from module pmc_apb_slave (D = \PWDATA [16], Q = \reg_pmc_timing [16]).
+Adding EN signal on $procdff$828 ($adff) from module pmc_apb_slave (D = \PWDATA [28], Q = \reg_pmc_ctrl [28]).
+Adding EN signal on $procdff$878 ($adff) from module pmc_apb_slave (D = \PWDATA [18], Q = \reg_pmc_ctrl [18]).
+Adding EN signal on $procdff$733 ($adff) from module pmc_apb_slave (D = \PWDATA [15], Q = \reg_pmc_timing [15]).
+Adding EN signal on $procdff$963 ($adff) from module pmc_apb_slave (D = \PWDATA [1], Q = \reg_pmc_ctrl [1]).
+Adding EN signal on $procdff$1018 ($adff) from module pmc_apb_slave (D = \PWDATA [22], Q = \reg_pmc_timing [22]).
+Adding EN signal on $procdff$738 ($adff) from module pmc_apb_slave (D = \PWDATA [14], Q = \reg_pmc_timing [14]).
+Adding EN signal on $procdff$833 ($adff) from module pmc_apb_slave (D = \PWDATA [27], Q = \reg_pmc_ctrl [27]).
+Adding EN signal on $procdff$933 ($adff) from module pmc_apb_slave (D = \PWDATA [7], Q = \reg_pmc_ctrl [7]).
+Adding EN signal on $procdff$743 ($adff) from module pmc_apb_slave (D = \PWDATA [13], Q = \reg_pmc_timing [13]).
+Adding EN signal on $procdff$913 ($adff) from module pmc_apb_slave (D = \PWDATA [11], Q = \reg_pmc_ctrl [11]).
+Adding EN signal on $procdff$903 ($adff) from module pmc_apb_slave (D = \PWDATA [13], Q = \reg_pmc_ctrl [13]).
+Adding EN signal on $procdff$748 ($adff) from module pmc_apb_slave (D = \PWDATA [12], Q = \reg_pmc_timing [12]).
+Adding EN signal on $procdff$838 ($adff) from module pmc_apb_slave (D = \PWDATA [26], Q = \reg_pmc_ctrl [26]).
+Adding EN signal on $procdff$998 ($adff) from module pmc_apb_slave (D = \PWDATA [26], Q = \reg_pmc_timing [26]).
+Adding EN signal on $procdff$753 ($adff) from module pmc_apb_slave (D = \PWDATA [11], Q = \reg_pmc_timing [11]).
+Adding EN signal on $procdff$883 ($adff) from module pmc_apb_slave (D = \PWDATA [17], Q = \reg_pmc_ctrl [17]).
+Adding EN signal on $procdff$938 ($adff) from module pmc_apb_slave (D = \PWDATA [6], Q = \reg_pmc_ctrl [6]).
+Adding EN signal on $procdff$758 ($adff) from module pmc_apb_slave (D = \PWDATA [10], Q = \reg_pmc_timing [10]).
+Adding EN signal on $procdff$1008 ($adff) from module pmc_apb_slave (D = \PWDATA [24], Q = \reg_pmc_timing [24]).
+Adding EN signal on $procdff$843 ($adff) from module pmc_apb_slave (D = \PWDATA [25], Q = \reg_pmc_ctrl [25]).
+Adding EN signal on $procdff$763 ($adff) from module pmc_apb_slave (D = \PWDATA [9], Q = \reg_pmc_timing [9]).
+Adding EN signal on $procdff$968 ($adff) from module pmc_apb_slave (D = \PWDATA [0], Q = \reg_pmc_ctrl [0]).
+Adding EN signal on $procdff$768 ($adff) from module pmc_apb_slave (D = \PWDATA [8], Q = \reg_pmc_timing [8]).
+Adding EN signal on $procdff$848 ($adff) from module pmc_apb_slave (D = \PWDATA [24], Q = \reg_pmc_ctrl [24]).
+Adding EN signal on $procdff$943 ($adff) from module pmc_apb_slave (D = \PWDATA [5], Q = \reg_pmc_ctrl [5]).
+Adding EN signal on $procdff$773 ($adff) from module pmc_apb_slave (D = \PWDATA [7], Q = \reg_pmc_timing [7]).
+Adding EN signal on $procdff$1013 ($adff) from module pmc_apb_slave (D = \PWDATA [23], Q = \reg_pmc_timing [23]).
+Adding EN signal on $procdff$888 ($adff) from module pmc_apb_slave (D = \PWDATA [16], Q = \reg_pmc_ctrl [16]).
+Adding EN signal on $procdff$778 ($adff) from module pmc_apb_slave (D = \PWDATA [6], Q = \reg_pmc_timing [6]).
+Adding EN signal on $procdff$853 ($adff) from module pmc_apb_slave (D = \PWDATA [23], Q = \reg_pmc_ctrl [23]).
+Adding EN signal on $procdff$988 ($adff) from module pmc_apb_slave (D = \PWDATA [28], Q = \reg_pmc_timing [28]).
+Adding EN signal on $procdff$783 ($adff) from module pmc_apb_slave (D = \PWDATA [5], Q = \reg_pmc_timing [5]).
+Adding EN signal on $procdff$983 ($adff) from module pmc_apb_slave (D = \PWDATA [29], Q = \reg_pmc_timing [29]).
+Adding EN signal on $procdff$948 ($adff) from module pmc_apb_slave (D = \PWDATA [4], Q = \reg_pmc_ctrl [4]).
+Adding EN signal on $procdff$788 ($adff) from module pmc_apb_slave (D = \PWDATA [4], Q = \reg_pmc_timing [4]).
+Adding EN signal on $procdff$858 ($adff) from module pmc_apb_slave (D = \PWDATA [22], Q = \reg_pmc_ctrl [22]).
+Adding EN signal on $procdff$893 ($adff) from module pmc_apb_slave (D = \PWDATA [15], Q = \reg_pmc_ctrl [15]).
+Adding EN signal on $procdff$793 ($adff) from module pmc_apb_slave (D = \PWDATA [3], Q = \reg_pmc_timing [3]).
+Adding EN signal on $procdff$973 ($adff) from module pmc_apb_slave (D = \PWDATA [31], Q = \reg_pmc_timing [31]).
+Adding EN signal on $procdff$1003 ($adff) from module pmc_apb_slave (D = \PWDATA [25], Q = \reg_pmc_timing [25]).
+Adding EN signal on $procdff$798 ($adff) from module pmc_apb_slave (D = \PWDATA [2], Q = \reg_pmc_timing [2]).
+Adding EN signal on $procdff$863 ($adff) from module pmc_apb_slave (D = \PWDATA [21], Q = \reg_pmc_ctrl [21]).
+Adding EN signal on $procdff$953 ($adff) from module pmc_apb_slave (D = \PWDATA [3], Q = \reg_pmc_ctrl [3]).
+Adding EN signal on $procdff$803 ($adff) from module pmc_apb_slave (D = \PWDATA [1], Q = \reg_pmc_timing [1]).
+Adding EN signal on $procdff$908 ($adff) from module pmc_apb_slave (D = \PWDATA [12], Q = \reg_pmc_ctrl [12]).
+Adding EN signal on $procdff$993 ($adff) from module pmc_apb_slave (D = \PWDATA [27], Q = \reg_pmc_timing [27]).
+Adding EN signal on $procdff$808 ($adff) from module pmc_apb_slave (D = \PWDATA [0], Q = \reg_pmc_timing [0]).
+Adding EN signal on $procdff$868 ($adff) from module pmc_apb_slave (D = \PWDATA [20], Q = \reg_pmc_ctrl [20]).
+Adding EN signal on $procdff$898 ($adff) from module pmc_apb_slave (D = \PWDATA [14], Q = \reg_pmc_ctrl [14]).
+Adding EN signal on $procdff$813 ($adff) from module pmc_apb_slave (D = \PWDATA [31], Q = \reg_pmc_ctrl [31]).
+Adding EN signal on $procdff$1023 ($adff) from module pmc_apb_slave (D = \PWDATA [21], Q = \reg_pmc_timing [21]).
+Adding EN signal on $procdff$958 ($adff) from module pmc_apb_slave (D = \PWDATA [2], Q = \reg_pmc_ctrl [2]).
+Adding EN signal on $procdff$818 ($adff) from module pmc_apb_slave (D = \PWDATA [30], Q = \reg_pmc_ctrl [30]).
+Adding EN signal on $procdff$923 ($adff) from module pmc_apb_slave (D = \PWDATA [9], Q = \reg_pmc_ctrl [9]).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmc_core..
+Finding unused cells or wires in module \pmc_apb_slave..
+Removed 72 unused cells and 795 unused wires.
+<suppressed ~74 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmc_core.
+Optimizing module pmc_apb_slave.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmc_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pmc_apb_slave..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~126 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmc_core.
+  Optimizing cells in module \pmc_apb_slave.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmc_core'.
+Computing hashes of 172 cells of `\pmc_core'.
+Finding duplicate cells in `\pmc_core'.
+Finding identical cells in module `\pmc_apb_slave'.
+Computing hashes of 256 cells of `\pmc_apb_slave'.
+Finding duplicate cells in `\pmc_apb_slave'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmc_core..
+Finding unused cells or wires in module \pmc_apb_slave..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmc_core.
+Optimizing module pmc_apb_slave.
+
+4.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:1015$499 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:1014$498 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:1013$497 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:1012$496 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:1011$495 ($mux).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:1010$494 ($not).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1009$493 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1008$492 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1007$491 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1006$490 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1005$489 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1004$488 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1003$487 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1002$486 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1001$485 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:1000$484 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:999$483 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:998$482 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:997$481 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:996$480 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:995$479 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:994$478 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:993$477 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:992$476 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:991$475 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:990$474 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:989$473 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:988$472 ($and).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:987$471 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:986$470 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:985$469 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:984$468 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:983$467 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:982$466 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:981$465 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:980$464 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:979$463 ($mux).
+Mapping pmc_core.$ternary$netlist/pmc_mapped.v:978$462 ($mux).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:977$461 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:976$460 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:975$459 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:974$458 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:973$457 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:972$456 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:971$455 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:970$454 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:969$453 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:968$452 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:967$451 ($not).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:966$450 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:965$449 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:964$448 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:963$447 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:962$446 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:961$445 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:960$444 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:959$443 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:958$442 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:957$441 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:956$440 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:955$439 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:954$438 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:953$437 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:952$436 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:951$435 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:950$434 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:949$433 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:948$432 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:947$431 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:946$430 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:945$429 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:944$428 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:943$427 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:942$426 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:941$425 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:940$424 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:939$423 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:938$422 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:937$421 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:936$420 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:935$419 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:934$418 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:933$417 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:932$416 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:931$415 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:930$414 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:929$413 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:928$412 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:927$411 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:926$410 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:925$409 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:924$408 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:923$407 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:922$406 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:921$405 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:920$404 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:919$403 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:918$402 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:917$401 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:916$400 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:915$399 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:914$398 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:913$397 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:912$396 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:911$395 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:910$394 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:909$393 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:908$392 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:907$391 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:906$390 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:905$389 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:904$388 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:903$387 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:902$386 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:901$385 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:900$384 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:899$383 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:898$382 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:897$381 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:896$380 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:895$379 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:894$378 ($or).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:893$377 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:892$376 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:891$375 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:890$374 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:889$373 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:888$372 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:887$371 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:886$370 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:885$369 ($and).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:884$368 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:883$367 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:882$366 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:881$365 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:880$364 ($or).
+Mapping pmc_core.$or$netlist/pmc_mapped.v:879$363 ($or).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:878$362 ($and).
+Mapping pmc_core.$and$netlist/pmc_mapped.v:877$361 ($and).
+Mapping pmc_core.$xor$netlist/pmc_mapped.v:876$360 ($xor).
+Mapping pmc_core.$xor$netlist/pmc_mapped.v:875$359 ($xor).
+Mapping pmc_core.$xor$netlist/pmc_mapped.v:874$358 ($xor).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:873$357 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:872$356 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:871$355 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:870$354 ($not).
+Mapping pmc_core.$not$netlist/pmc_mapped.v:869$353 ($not).
+Mapping pmc_core.$auto$ff.cc:337:slice$1031 ($adffe).
+Mapping pmc_core.$procdff$683 ($adff).
+Mapping pmc_core.$auto$ff.cc:337:slice$1030 ($adffe).
+Mapping pmc_core.$auto$ff.cc:337:slice$1032 ($adffe).
+Mapping pmc_core.$procdff$678 ($adff).
+Mapping pmc_core.$auto$ff.cc:337:slice$1029 ($adffe).
+Mapping pmc_core.$procdff$688 ($adff).
+Mapping pmc_core.$procdff$673 ($adff).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:637$319 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:636$318 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:635$317 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:634$316 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:633$315 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:632$314 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:631$313 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:630$312 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:629$311 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:628$310 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:627$309 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:626$308 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:625$307 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:624$306 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:623$305 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:622$304 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:621$303 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:620$302 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:619$301 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:618$300 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:617$299 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:616$298 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:615$297 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:614$296 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:613$295 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:612$294 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:611$293 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:610$292 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:609$291 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:608$290 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:607$289 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:606$288 ($mux).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:605$287 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:604$286 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:603$285 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:602$284 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:601$283 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:600$282 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:599$281 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:598$280 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:597$279 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:596$278 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:595$277 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:594$276 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:593$275 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:592$274 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:591$273 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:590$272 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:589$271 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:588$270 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:587$269 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:586$268 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:585$267 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:584$266 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:583$265 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:582$264 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:581$263 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:580$262 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:579$261 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:578$260 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:577$259 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:576$258 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:575$257 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:574$256 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:573$255 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:572$254 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:571$253 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:570$252 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:569$251 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:568$250 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:567$249 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:566$248 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:565$247 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:564$246 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:563$245 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:562$244 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:561$243 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:560$242 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:559$241 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:558$240 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:557$239 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:556$238 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:555$237 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:554$236 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:553$235 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:552$234 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:551$233 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:550$232 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:549$231 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:548$230 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:547$229 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:546$228 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:545$227 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:544$226 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:543$225 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:542$224 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:541$223 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:540$222 ($and).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:539$221 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:538$220 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:537$219 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:536$218 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:535$217 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:534$216 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:533$215 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:532$214 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:531$213 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:530$212 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:529$211 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:528$210 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:527$209 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:526$208 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:525$207 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:524$206 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:523$205 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:522$204 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:521$203 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:520$202 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:519$201 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:518$200 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:517$199 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:516$198 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:515$197 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:514$196 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:513$195 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:512$194 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:511$193 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:510$192 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:509$191 ($mux).
+Mapping pmc_apb_slave.$ternary$netlist/pmc_mapped.v:508$190 ($mux).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:507$189 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:506$188 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:505$187 ($and).
+Mapping pmc_apb_slave.$not$netlist/pmc_mapped.v:504$186 ($not).
+Mapping pmc_apb_slave.$not$netlist/pmc_mapped.v:503$185 ($not).
+Mapping pmc_apb_slave.$not$netlist/pmc_mapped.v:502$184 ($not).
+Mapping pmc_apb_slave.$not$netlist/pmc_mapped.v:501$183 ($not).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:500$182 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:499$181 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:498$180 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:497$179 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:496$178 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:495$177 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:494$176 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:493$175 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:492$174 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:491$173 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:490$172 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:489$171 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:488$170 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:487$169 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:486$168 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:485$167 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:484$166 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:483$165 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:482$164 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:481$163 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:480$162 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:479$161 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:478$160 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:477$159 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:476$158 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:475$157 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:474$156 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:473$155 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:472$154 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:471$153 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:470$152 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:469$151 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:468$150 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:467$149 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:466$148 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:465$147 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:464$146 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:463$145 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:462$144 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:461$143 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:460$142 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:459$141 ($or).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:458$140 ($and).
+Mapping pmc_apb_slave.$and$netlist/pmc_mapped.v:457$139 ($and).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:456$138 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:455$137 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:454$136 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:453$135 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:452$134 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:451$133 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:450$132 ($or).
+Mapping pmc_apb_slave.$or$netlist/pmc_mapped.v:449$131 ($or).
+Mapping pmc_apb_slave.$not$netlist/pmc_mapped.v:448$130 ($not).
+Mapping pmc_apb_slave.$not$netlist/pmc_mapped.v:447$129 ($not).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1095 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1094 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1093 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1092 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1091 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1090 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1089 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1088 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1087 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1086 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1085 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1084 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1083 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1082 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1081 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1080 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1079 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1078 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1077 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1076 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1075 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1074 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1073 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1072 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1071 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1070 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1069 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1068 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1067 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1066 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1065 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1064 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1096 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1063 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1062 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1061 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1060 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1059 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1058 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1057 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1056 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1055 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1054 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1053 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1052 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1051 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1050 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1049 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1048 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1047 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1046 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1045 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1044 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1043 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1042 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1041 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1040 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1039 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1038 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1037 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1036 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1035 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1034 ($adffe).
+Mapping pmc_apb_slave.$auto$ff.cc:337:slice$1033 ($adffe).
+
+6. Executing TECHMAP pass (map to technology primitives).
+
+6.1. Executing Verilog-2005 frontend: C:\oss-cad-suite\bin\../share/yosys/techmap.v
+Parsing Verilog input from `C:\oss-cad-suite\bin\../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+7. Executing OPT pass (performing simple optimizations).
+
+7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmc_core.
+Optimizing module pmc_apb_slave.
+
+7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmc_core'.
+Computing hashes of 172 cells of `\pmc_core'.
+Finding duplicate cells in `\pmc_core'.
+Finding identical cells in module `\pmc_apb_slave'.
+Computing hashes of 256 cells of `\pmc_apb_slave'.
+Finding duplicate cells in `\pmc_apb_slave'.
+Removed a total of 0 cells.
+
+7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmc_core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \pmc_apb_slave..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmc_core.
+  Optimizing cells in module \pmc_apb_slave.
+Performed a total of 0 changes.
+
+7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmc_core'.
+Computing hashes of 172 cells of `\pmc_core'.
+Finding duplicate cells in `\pmc_core'.
+Finding identical cells in module `\pmc_apb_slave'.
+Computing hashes of 256 cells of `\pmc_apb_slave'.
+Finding duplicate cells in `\pmc_apb_slave'.
+Removed a total of 0 cells.
+
+7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmc_core..
+Finding unused cells or wires in module \pmc_apb_slave..
+
+7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmc_core.
+Optimizing module pmc_apb_slave.
+
+7.9. Finished fast OPT passes. (There is nothing left to do.)
+
+Syntax error in command `echo SETUP ANALYSIS (MAX DELAY PATHS)':
+
+    echo on
+
+Print all commands to log before executing them.
+
+
+    echo off
+
+Do not print all commands to log before executing them. (default)
+
